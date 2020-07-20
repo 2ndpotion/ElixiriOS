@@ -1,0 +1,22 @@
+{
+  "name": "ElixiriOS",
+  "version": "0.1.0",
+  "summary": "A short description of ElixiriOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kevin@2ndpotion.com/ElixiriOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kevin@2ndpotion.com": "kevin@2ndpotion.com"
+  },
+  "source": {
+    "git": "https://github.com/kevin@2ndpotion.com/ElixiriOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ElixiriOS/Classes/**/*"
+}

@@ -1,0 +1,6 @@
+framework module Pods_ElixiriOS_Example {
+  umbrella header "Pods-ElixiriOS_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
