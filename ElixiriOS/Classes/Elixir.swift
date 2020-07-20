@@ -10,13 +10,15 @@
 import Foundation
 import UIKit
 
-class Elixir {
+public class Elixir {
+    
+    public var latestConversionValue = 0
     
     private var conversionTableURL: String = ""
     //Contains all the conversions you want to track, as well as their "hooks"
     private var conversionTable: [Conversion] = []
     
-    static var binaryMatchingTable: [Int: String] = [
+    private var binaryMatchingTable: [Int: String] = [
         1:"001",
         2:"010",
         3:"011",
@@ -37,19 +39,19 @@ class Elixir {
     
     //Init
     public func initializeWith(url: String) {
-        Elixir.instance().conversionTableURL = url
-        Elixir.instance().retrieveConversionData()
-        Elixir.instance().retrieveLatestBinaries()
+        self.conversionTableURL = url
+        self.retrieveConversionData()
+        self.retrieveLatestBinaries()
     }
     
-    class func instance() -> Elixir {
+    public class func instance() -> Elixir {
         return _instance
     }
     
     private func retrieveConversionData() {
         //verify if conversion data available, otherwise request it
         if UserDefaults.standard.value(forKey: "conversionTableData") == nil {
-            Elixir.instance().requestConversionFile()
+            self.requestConversionFile()
         }
     }
     
@@ -65,7 +67,7 @@ class Elixir {
     //TODO: handles dynamic URL in SDK setup
     private func requestConversionFile() {
         
-        let url = URL(string: conversionTableURL)
+        let url = URL(string: self.conversionTableURL)
         guard let requestUrl = url else {
             print("error with URL")
             return
@@ -86,7 +88,7 @@ class Elixir {
             }
             
             if let data = data {
-                Elixir.instance().store(data)
+                self.store(data)
             }
         }
         task.resume()
@@ -128,18 +130,28 @@ class Elixir {
                     }
                 }
             }
-            Elixir.instance().conversionTable = _conversionsTable
+            self.conversionTable = _conversionsTable
         }
     }
     
-    func logEvent(_ event: String, withProperties properties: [String: AnyHashable]?) {
+    public func logEvent(_ event: String, withProperties properties: [String: AnyHashable]?) {
         
-        Elixir.identifyConversionValue(forEvent: event, andProperties: properties)
+        self.identifyConversionValue(forEvent: event, andProperties: properties)
         
-        if let value = Int(revenueBinary+progressBinary, radix: 2) {
-            Elixir.instance().store(revenueBinary, progressBinary)
-            Skadnetwork.updateConversionValue(value)
+        self.store(self.revenueBinary, self.progressBinary)
+        
+    }
+    
+    public func retrieveConversionValue() -> Int {
+        
+        self.retrieveLatestBinaries()
+        if let value = Int(self.revenueBinary+self.progressBinary,
+                           radix: 2) {
+            self.latestConversionValue = value
+            return(value)
+            //Skadnetwork.updateConversionValue(value)
         }
+        return 0
     }
     
     func store(_ revenueBinary: String, _ progressBinary: String) {
@@ -149,20 +161,20 @@ class Elixir {
     
   
     
-    class func identifyConversionValue(forEvent event: String, andProperties properties: [String: AnyHashable]? ) {
+    func identifyConversionValue(forEvent event: String, andProperties properties: [String: AnyHashable]? ) {
         
-        guard Elixir.instance().conversionTable.count != 0 else {
-            if let data = UserDefaults.standard.value(forKey: "conversionTableData") as? Data {
-                Elixir.instance().decode(data)
-            }
-            return
+        if self.conversionTable.count == 0,
+            let data = UserDefaults.standard.value(forKey: "conversionTableData") as? Data {
+                self.decode(data)
         }
+        
+        
         var confirmedConversions: [Conversion] = []
 
-        for conversion in Elixir.instance().conversionTable {
+        for conversion in self.conversionTable {
             for hook in conversion.hooks {
                 if hook.eventName == event {
-                    if hook.attribute == nil || Elixir.instance().confirmMatch(forHook: hook, withProperties: properties) {
+                    if hook.attribute == nil || self.confirmMatch(forHook: hook, withProperties: properties) {
                         confirmedConversions.append(conversion)
                     }
                 }
@@ -176,9 +188,9 @@ class Elixir {
                 //TODO: manage multiple events
                 switch highestConversion.type {
                 case "Progress":
-                    Elixir.instance().progressBinary = binaryMatchingTable[highestConversion.priority] ?? "000"
+                    self.progressBinary = binaryMatchingTable[highestConversion.priority] ?? "000"
                 case "Revenue":
-                    Elixir.instance().revenueBinary = binaryMatchingTable[highestConversion.priority] ?? "000"
+                    self.revenueBinary = binaryMatchingTable[highestConversion.priority] ?? "000"
                 default:
                     break
                 }
@@ -186,13 +198,15 @@ class Elixir {
         }
     }
     
+    
+    //TODO: clean this
     private func confirmMatch(forHook hook: Hook, withProperties properties: [String: AnyHashable]?) -> Bool {
         
         
-        if let hookvalue = Int(hook.value ?? ""),
+        if let hookvalue = Double(hook.value ?? ""),
         hook.attribute != nil && properties != nil,
         let eventValue = properties![hook.attribute!] as? String,
-        let _eventValue = Int(eventValue.description) {
+        let _eventValue = Double(eventValue.description) {
             
         switch hook.condition {
         case "isHigher":
@@ -220,6 +234,11 @@ class Elixir {
         }
         return false
     }
+    
+    //DEBUG TO REMOVE
+    public func getConversionTable() -> Data? {
+        return UserDefaults.standard.data(forKey: "conversionTableData")
+    }
 }
 
 
@@ -244,19 +263,3 @@ struct Hook {
     var value: String?
 }
 
-
-extension UIViewController {
-
-  func showAlert(title: String, message: String, callback: @escaping () -> ()) {
-    let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {
-       alertAction in
-       callback()
-     }))
-
-     self.present(alert, animated: true, completion: nil)
-   }
-
-   //add additional functions here if necessary
-   //like a function showing alert with cancel
-}

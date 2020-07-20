@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        Elixir.instance().initializeWith(url: "YOURJSONURL")
+        Elixir.instance().initializeWith(url: "https://limitless-lake-27078.herokuapp.com/Conversions")
         return true
     }
 
