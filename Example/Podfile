@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ElixiriOS_Example' do
+  pod 'ElixiriOS', :path => '../'
+
+  target 'ElixiriOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
