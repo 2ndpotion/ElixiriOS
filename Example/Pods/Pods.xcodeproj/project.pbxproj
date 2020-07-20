@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F36A31F2F33811728BD41AF14E0FD10 /* ElixiriOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEEA868BB568CA740965C72DD404C82E /* ElixiriOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		240FF9580181F7423F4307AB04114D04 /* Elixir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BF3C96EE4977B05104A026EA015E53 /* Elixir.swift */; };
+		028DC1C65B1944996BCE573B9EF22227 /* ElixiriOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3083269AE137316597F68077D3B6C9CB /* ElixiriOS-dummy.m */; };
+		0F36A31F2F33811728BD41AF14E0FD10 /* ElixiriOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6FA36D676E98D408BA25951226753DF /* ElixiriOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		255DE36C2F8EF41B8DB25B6CE27F2241 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3FF52803FDA853D7A996DA8AC04CF8CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		78DD09D5FEB43C479468035ADEB1C35A /* ElixiriOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67E2A28EC75325159B60EB36B64229CC /* ElixiriOS-dummy.m */; };
 		9CB218E2744B8875C8DCE550A16E78BD /* Pods-ElixiriOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 814E98A154D48EB93B458AC5DEF6D87E /* Pods-ElixiriOS_Example-dummy.m */; };
 		A977C35DD498ED6C8DBFAA12799618F9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		B1149E30689809CB54FFD872AF0C5BEC /* Pods-ElixiriOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 25251B2EA818AA1D40405FCF0229F3A7 /* Pods-ElixiriOS_Tests-dummy.m */; };
 		B6178A6D6299F55A53C903EB2B1F6A0A /* Pods-ElixiriOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D71461732E50F30437360826700BEF /* Pods-ElixiriOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB10648BB36CE2149D0C02B52111E8F5 /* Elixir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992DBBF52D8259924679F1DCF6792104 /* Elixir.swift */; };
 		E94CCABFCE5FBB74315FFC9281020CA9 /* Pods-ElixiriOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7F83CE0CA6699BE6885402E08A9DF19 /* Pods-ElixiriOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -43,33 +43,33 @@
 		2253837FE0EE65ABB9876A4762DBBA89 /* Pods-ElixiriOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElixiriOS_Tests-Info.plist"; sourceTree = "<group>"; };
 		25251B2EA818AA1D40405FCF0229F3A7 /* Pods-ElixiriOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElixiriOS_Tests-dummy.m"; sourceTree = "<group>"; };
 		2856C8F30ADD9B55F30A95A691CC7C5C /* Pods-ElixiriOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ElixiriOS_Example-frameworks.sh"; sourceTree = "<group>"; };
-		2B28105CCDDB444A75EBEA3BEAA209BA /* ElixiriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ElixiriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3054F7DCD3A9EAB787A9990F2D8FC985 /* ElixiriOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ElixiriOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2B28105CCDDB444A75EBEA3BEAA209BA /* ElixiriOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ElixiriOS.framework; path = ElixiriOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3066A62E01D41CBD06886674DB2CAC88 /* Pods-ElixiriOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElixiriOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3083269AE137316597F68077D3B6C9CB /* ElixiriOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ElixiriOS-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		37BF3C96EE4977B05104A026EA015E53 /* Elixir.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Elixir.swift; path = ElixiriOS/Classes/Elixir.swift; sourceTree = "<group>"; };
-		3BAE53ED1ED437848E53C3FB0241D8A6 /* ElixiriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElixiriOS.release.xcconfig; sourceTree = "<group>"; };
-		3CADD600F5AB6879B601427DD5967541 /* Pods_ElixiriOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElixiriOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		376FDF55DC1084A730ADB32EA3182485 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3984640F85A2227AF28E463BE5558773 /* ElixiriOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ElixiriOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3CADD600F5AB6879B601427DD5967541 /* Pods_ElixiriOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElixiriOS_Example.framework; path = "Pods-ElixiriOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		431E7695017FD8BEC92A55CD5B5B5FA9 /* Pods-ElixiriOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElixiriOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		502EAD1574830FFF9FB87155494201C9 /* ElixiriOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElixiriOS.debug.xcconfig; sourceTree = "<group>"; };
-		50A3C1BD6112AB7FB3C1A534762B129D /* Pods_ElixiriOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ElixiriOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50A3C1BD6112AB7FB3C1A534762B129D /* Pods_ElixiriOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ElixiriOS_Tests.framework; path = "Pods-ElixiriOS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		528DF556DEE5C860CAC90C6B2FB182C6 /* Pods-ElixiriOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ElixiriOS_Example-Info.plist"; sourceTree = "<group>"; };
-		67E2A28EC75325159B60EB36B64229CC /* ElixiriOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ElixiriOS-dummy.m"; sourceTree = "<group>"; };
-		8105BB9185EC435D03EFA6F32081FE2A /* ElixiriOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ElixiriOS.modulemap; sourceTree = "<group>"; };
+		7B13313B71B2582C663EFFBB258110A0 /* ElixiriOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ElixiriOS.modulemap; sourceTree = "<group>"; };
 		814E98A154D48EB93B458AC5DEF6D87E /* Pods-ElixiriOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ElixiriOS_Example-dummy.m"; sourceTree = "<group>"; };
 		8881832016ED2E87A24D463B6E8F91A9 /* Pods-ElixiriOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElixiriOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8F11942C735E34AD0D77B906686E9D5A /* ElixiriOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ElixiriOS-Info.plist"; sourceTree = "<group>"; };
+		90378B3DADD2063D8E28D54B79158107 /* ElixiriOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElixiriOS-prefix.pch"; sourceTree = "<group>"; };
 		90E3F0811520107D4ADAC8E2E345B702 /* Pods-ElixiriOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ElixiriOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		97A1A0C84DCD998C009945C08BC93698 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AEEA868BB568CA740965C72DD404C82E /* ElixiriOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElixiriOS-umbrella.h"; sourceTree = "<group>"; };
+		97CBE6D6716C03842FD1C274D75F95FA /* ElixiriOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ElixiriOS-Info.plist"; sourceTree = "<group>"; };
+		992DBBF52D8259924679F1DCF6792104 /* Elixir.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Elixir.swift; path = ElixiriOS/Classes/Elixir.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B4D71461732E50F30437360826700BEF /* Pods-ElixiriOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElixiriOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B5715F22F17F11D40FB9864D35A87E83 /* ElixiriOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElixiriOS.release.xcconfig; sourceTree = "<group>"; };
 		C7E93B9D730355890C01B1E85E8365A5 /* Pods-ElixiriOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElixiriOS_Example.modulemap"; sourceTree = "<group>"; };
-		D909B4DD7607A39C2BDEFEDDBB34E06D /* ElixiriOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElixiriOS-prefix.pch"; sourceTree = "<group>"; };
+		D44419C4A0AB72D1B2BB8141CE9DB490 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		DFED6CFCD98F9BCD10EE581A6AF47DE4 /* Pods-ElixiriOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ElixiriOS_Tests.modulemap"; sourceTree = "<group>"; };
-		E2912577AF2E340711443313E48C2965 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6C71750DF902FC6F09C18556F3A0C07 /* Pods-ElixiriOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ElixiriOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E6FA36D676E98D408BA25951226753DF /* ElixiriOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ElixiriOS-umbrella.h"; sourceTree = "<group>"; };
 		E7F83CE0CA6699BE6885402E08A9DF19 /* Pods-ElixiriOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ElixiriOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		F3AF7CE0391AF9D51FCE3DAA06F9AB92 /* ElixiriOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ElixiriOS.debug.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +110,31 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		34308967EB83FA5E7732AEA34CA2DCE3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B13313B71B2582C663EFFBB258110A0 /* ElixiriOS.modulemap */,
+				3083269AE137316597F68077D3B6C9CB /* ElixiriOS-dummy.m */,
+				97CBE6D6716C03842FD1C274D75F95FA /* ElixiriOS-Info.plist */,
+				90378B3DADD2063D8E28D54B79158107 /* ElixiriOS-prefix.pch */,
+				E6FA36D676E98D408BA25951226753DF /* ElixiriOS-umbrella.h */,
+				F3AF7CE0391AF9D51FCE3DAA06F9AB92 /* ElixiriOS.debug.xcconfig */,
+				B5715F22F17F11D40FB9864D35A87E83 /* ElixiriOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ElixiriOS";
+			sourceTree = "<group>";
+		};
+		43BDEB9CD72F8535D7D677659211BE97 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				3984640F85A2227AF28E463BE5558773 /* ElixiriOS.podspec */,
+				D44419C4A0AB72D1B2BB8141CE9DB490 /* LICENSE */,
+				376FDF55DC1084A730ADB32EA3182485 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		66FFC2C14A2BD7C6F7BB79E488AFB83E /* Pods-ElixiriOS_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,17 +149,6 @@
 			);
 			name = "Pods-ElixiriOS_Tests";
 			path = "Target Support Files/Pods-ElixiriOS_Tests";
-			sourceTree = "<group>";
-		};
-		85DAD960E7941E56F71FEAC623CC11D9 /* ElixiriOS */ = {
-			isa = PBXGroup;
-			children = (
-				37BF3C96EE4977B05104A026EA015E53 /* Elixir.swift */,
-				E45D5A4E5331F66FE782A570D1F6E30B /* Pod */,
-				CA8D6FC52D05E75583D1467657A05A58 /* Support Files */,
-			);
-			name = ElixiriOS;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		A8A6BB00C0EDAAFA2B317C13E1C53198 /* Pods-ElixiriOS_Example */ = {
@@ -160,21 +174,6 @@
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		CA8D6FC52D05E75583D1467657A05A58 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8105BB9185EC435D03EFA6F32081FE2A /* ElixiriOS.modulemap */,
-				67E2A28EC75325159B60EB36B64229CC /* ElixiriOS-dummy.m */,
-				8F11942C735E34AD0D77B906686E9D5A /* ElixiriOS-Info.plist */,
-				D909B4DD7607A39C2BDEFEDDBB34E06D /* ElixiriOS-prefix.pch */,
-				AEEA868BB568CA740965C72DD404C82E /* ElixiriOS-umbrella.h */,
-				502EAD1574830FFF9FB87155494201C9 /* ElixiriOS.debug.xcconfig */,
-				3BAE53ED1ED437848E53C3FB0241D8A6 /* ElixiriOS.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ElixiriOS";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -205,20 +204,21 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E45D5A4E5331F66FE782A570D1F6E30B /* Pod */ = {
+		ECD12361584718C942E20A0396480BAC /* ElixiriOS */ = {
 			isa = PBXGroup;
 			children = (
-				3054F7DCD3A9EAB787A9990F2D8FC985 /* ElixiriOS.podspec */,
-				97A1A0C84DCD998C009945C08BC93698 /* LICENSE */,
-				E2912577AF2E340711443313E48C2965 /* README.md */,
+				992DBBF52D8259924679F1DCF6792104 /* Elixir.swift */,
+				43BDEB9CD72F8535D7D677659211BE97 /* Pod */,
+				34308967EB83FA5E7732AEA34CA2DCE3 /* Support Files */,
 			);
-			name = Pod;
+			name = ElixiriOS;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		F21CC46352CFD586D299AE75E7D0F63E /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				85DAD960E7941E56F71FEAC623CC11D9 /* ElixiriOS */,
+				ECD12361584718C942E20A0396480BAC /* ElixiriOS */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -258,7 +258,7 @@
 			buildConfigurationList = EDE246E7D16A6F7D78191D7FF03246B3 /* Build configuration list for PBXNativeTarget "ElixiriOS" */;
 			buildPhases = (
 				949D8E9530ADBB03F1D833DF6AC28D79 /* Headers */,
-				51C1C21DEF7BDA13DADD4B60720EC8D0 /* Sources */,
+				A9D32F853BD8A3BD9D2258B6663A47EC /* Sources */,
 				BCB20D19522D9256628EEF2190C0004B /* Frameworks */,
 				1652C73B6461617B5702435102E640E7 /* Resources */,
 			);
@@ -363,20 +363,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		51C1C21DEF7BDA13DADD4B60720EC8D0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78DD09D5FEB43C479468035ADEB1C35A /* ElixiriOS-dummy.m in Sources */,
-				240FF9580181F7423F4307AB04114D04 /* Elixir.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		56B394093C9E4868BAFC1FE462179DAE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B1149E30689809CB54FFD872AF0C5BEC /* Pods-ElixiriOS_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9D32F853BD8A3BD9D2258B6663A47EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB10648BB36CE2149D0C02B52111E8F5 /* Elixir.swift in Sources */,
+				028DC1C65B1944996BCE573B9EF22227 /* ElixiriOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,7 +508,7 @@
 		};
 		69CB3351D307FFC70DD96BF9A6DE4A52 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BAE53ED1ED437848E53C3FB0241D8A6 /* ElixiriOS.release.xcconfig */;
+			baseConfigurationReference = B5715F22F17F11D40FB9864D35A87E83 /* ElixiriOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -591,7 +591,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -697,7 +698,7 @@
 		};
 		F32A9EA79D404746F28FABD6B85B6EFC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 502EAD1574830FFF9FB87155494201C9 /* ElixiriOS.debug.xcconfig */;
+			baseConfigurationReference = F3AF7CE0391AF9D51FCE3DAA06F9AB92 /* ElixiriOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

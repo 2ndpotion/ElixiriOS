@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import ElixiriOS
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        Elixir.instance().logEvent("eventName", withProperties: nil)
         // Do any additional setup after loading the view, typically from a nib.
     }
 

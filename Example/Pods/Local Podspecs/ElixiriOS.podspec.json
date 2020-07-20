@@ -1,8 +1,8 @@
 {
   "name": "ElixiriOS",
   "version": "0.1.0",
-  "summary": "A short description of ElixiriOS.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "Elixir makes it easier to define and manage your conversion values",
+  "description": "Elixir is a tool created by 2ndPotion. It makes it easier to define and manage your conversion values in the server side. Elixir will take care of identifying the conversion value that should be sent at any time",
   "homepage": "https://github.com/kevin@2ndpotion.com/ElixiriOS",
   "license": {
     "type": "MIT",

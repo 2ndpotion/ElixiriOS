@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ElixiriOS: be813815134f1c29ccc5eea8d012b79a35a35542
+  ElixiriOS: 3f8ccc8e392acfba94dafdf09fac860896ed870d
 
 PODFILE CHECKSUM: ea69d2b22499fb4490fa861a9b19826ebf65aac6
 
