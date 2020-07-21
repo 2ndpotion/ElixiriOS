@@ -8,6 +8,7 @@
 //
 
 import Foundation
+import StoreKit
 import UIKit
 
 public class Elixir {
@@ -140,6 +141,14 @@ public class Elixir {
         
         self.store(self.revenueBinary, self.progressBinary)
         
+        if let value = Int(self.revenueBinary+self.progressBinary,
+                           radix: 2) {
+            
+            if #available(iOS 14.0, *) {
+                SKAdNetwork.updateConversionValue(value)
+            } else {}
+        }
+        
     }
     
     public func retrieveConversionValue() -> Int {
@@ -153,6 +162,8 @@ public class Elixir {
         }
         return 0
     }
+    
+    
     
     func store(_ revenueBinary: String, _ progressBinary: String) {
         UserDefaults.standard.set(revenueBinary, forKey: "revenueBinary")

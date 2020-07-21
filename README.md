@@ -17,12 +17,12 @@ ElixiriOS is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ElixiriOS'
+pod 'ElixiriOS', :git => 'https://github.com/2ndpotion/ElixiriOS'
 ```
 
 ## Author
 
-kevin@2ndpotion.com, kevin@2ndpotion.com
+kevin@2ndpotion.com for 2NDPOTION
 
 ## License
 

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import StoreKit
 import ElixiriOS
 
 @UIApplicationMain
@@ -18,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        if #available(iOS 11.3, *) {
+            SKAdNetwork.registerAppForAdNetworkAttribution()
+        } else {}
         Elixir.instance().initializeWith(url: "https://limitless-lake-27078.herokuapp.com/Conversions")
         return true
     }
