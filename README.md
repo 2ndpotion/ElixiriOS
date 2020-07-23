@@ -7,7 +7,7 @@
 
 ## Example
 
-If you want to see a live demo + dashboard principle: [https://www.youtube.com/watch?v=cY0jnPw6TOI&t=941s](url)
+If you want to see a live demo + dashboard principle: [https://www.youtube.com/watch?v=cY0jnPw6TOI](https://www.youtube.com/watch?v=cY0jnPw6TOI)
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
